@@ -1,11 +1,11 @@
-About r-carrier
-===============
+About r-carrier-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-carrier-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/r-lib/carrier
 
 Package license: GPL-3
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-carrier-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sending functions to remote processes can be wasteful of resources because they carry their environments with them. With the carrier package, it is easy to create functions that are isolated from their environment. These isolated functions, also called crates, print at the console with their total size and can be easily tested locally before being sent to a remote.
 
