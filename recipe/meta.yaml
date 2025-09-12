@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/carrier_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/carrier/carrier_{{ version }}.tar.gz
-  sha256: b8ed2610419a10545eae585dcd0c5fe9176a4a4818ae2c99ffa0dac3677d9873
+  sha256: abef978cd338e200e9485257eaf7b3c7fe10bc4d7a21434e9fd798050e198351
 
 build:
   number: 0
