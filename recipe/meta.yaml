@@ -1,4 +1,4 @@
-{% set version = "0.3.0.4" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/carrier_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/carrier/carrier_{{ version }}.tar.gz
-  sha256: abef978cd338e200e9485257eaf7b3c7fe10bc4d7a21434e9fd798050e198351
+  sha256: 149f1dc6c674fdb94559abb055a47844c4200095ce4c4a2f47be866d229b66d2
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,8 +38,8 @@ test:
 about:
   home: https://github.com/r-lib/carrier
   license: GPL-3
-  summary: Sending functions to remote processes can be wasteful of resources because they carry their environments with them. With the carrier package, it is easy to create functions that are isolated from their environment. These isolated functions, also called crates, print at the console with their total size and can
-    be easily tested locally before being sent to a remote.
+  summary: Sending functions to remote processes can be wasteful of resources because they carry their environments with them. With the carrier package, it is easy to create functions that are isolated from their environment. These isolated functions, also called crates, print at the console with their total size and 
+    can be easily tested locally before being sent to a remote.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
